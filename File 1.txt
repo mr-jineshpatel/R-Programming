@@ -1,0 +1,61 @@
+﻿name<-c('Anastasia','Dima','Katherine','James','Emily','Michael','Matthew','Laura','Kevin','Jonas')
+score<-c(12.5,9,16.5,12,9,20,14.5,13.5,8,19)
+attemps<-c(1,3,2,3,2,3,1,1,2,1)
+qualify<-c('yes','no','yes','no','no','yes','yes','no','no','yes')
+
+
+#1st TAsk
+exam<-data.frame(name,score,attemps,qualify)
+#print(exam)
+
+#2nd TAsk
+#exam<-data.frame(name)
+#print(exam)
+#print(exam$name)
+#print(exam[[1]])
+
+#3rd TAsk
+#print(exam[(1:2),(1:4)])
+
+#4th TAsk
+#print(exam[c(3,5),c(1,3)])
+
+#5th TAsk
+exam$country<-c('India','Nepal','Delhi','Mumbai','USA','UK','Canada','Kerala','Spain','Paris')
+#print(exam)
+
+-----------------------------------------------------------------------------------------------------------------
+
+sid<-c(74,40,111,108,109)
+name<-c('Divyansu','Jinesh','Umang','Sumit','Sahil')
+course<-c('Imscit','It','Btech','BCA','BBA')
+
+#2nd TAsk
+studentdetail<-data.frame(sid,name,course)
+#print(studentdetail)
+
+#3rd Task
+studentdetail$hobby<-c('cricket','football','song','dance','tavelling')
+#print(studentdetail)
+
+#4th Task
+#print(data.frame(name,course))
+#print(studentdetail[c(2,4)])
+
+#5th Task
+print(studentdetail[c(2,4),c(2,4)])
+
+
+#-----------------------------------------------------------------------------
+#ADDING ROW
+#studentdetail[nrow(studentdetail)+1,]<-c(50,'Darshil','ACCA','Learning')
+#print(studentdetail)
+
+studentdetail<-rbind(studentdetail,list(50,'Darshil','ACCA','Learning'))
+#print(studentdetail)
+
+#DELETE ROW
+studentdetail=studentdetail[c(-6), ] 
+print(studentdetail)
+
+

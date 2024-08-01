@@ -1,0 +1,150 @@
+﻿#1st Program
+
+a=c(1,2,3)
+b=c("D","i","v","y","a","n","s","u")
+d=c(TRUE)
+
+print(class(a))
+print(class(b))
+print(class(d))
+
+#2nd Program
+a=c(10,20,30)
+b=c(40,50,60)
+d=readline("Enter your Choice:-")
+print("Enter 1 For Addition")
+print("Enter 2 For Subtraction")
+print("Enter 3 For Multiplication")
+print("Enter 4 For Divison")
+if(d==1){
+  print(a+b)
+}
+if(d==2){
+  print(a-b)
+}
+if(d==3){
+  print(a*b)
+}
+if(d==4){
+  print(a/b)
+}
+
+#3rd Program
+
+a=c(12,15,18)
+b=c(10,25,14)
+d=sum(a)
+print(d)
+e=mean(a)
+print(e)
+f=prod(a)
+print(f)
+
+#4th Program
+
+a=c(20,25,30)
+b=min(a)
+print(b)
+d=max(a)
+print(d)
+
+#5th Program
+
+a=c(20,10,15)
+b=sort(a)
+print(b)
+d=sort(decreasing=TRUE,a)
+print(d)
+
+#6th Program
+
+a=c("Divyansu","Darshil",15,25+6i)
+b=readline("Enter You want to check:-")
+d=b %in% a
+print(d)
+
+#7th Program
+
+e=c("Divyansu","Patel",20,50)
+f=c("Agrawal","Divyansu",50)
+g=setdiff(e,f)
+print(g)
+
+#8th Program
+
+a=c(10,20,30,40,50)
+b=c(20,30,40,50,60)
+e=cbind(a,b)
+print(e)
+d=rbind(a,b)
+print(d)
+
+#9th Program
+
+a=c(10,20,30)
+b=c(40,60,10)
+print(union(a,b))
+
+
+#10th Program
+
+a=c(10,20,30)
+b=c(40,60,10)
+print(c(a,b))
+
+
+<---------LIST---------->
+
+#1st Program
+
+
+b<-c(25,30,35)
+a<-list("Divyansu",12,15,b,TRUE)
+print(a)
+
+#2nd Program
+b<-list(25,30,35)
+a<-list(20,10,85)
+print(c(a,b))
+
+
+#3rd Program
+
+a<-list(10,20,30,"Divyansu")
+b<-unlist(a)
+print(b)
+
+
+#4th Program
+
+a<-list(10,20,30,40,"Divyansu")
+print(length(a))
+
+
+#5th Program
+
+rn<-c(10,20,30,40)
+name<-c("Divyansu","Jinesh","Darshil","Umang")
+course<-c("Imscit","It","BCA","Btech")
+
+div<-list(rn,name,course)
+#print(div)
+#print(class(div))
+
+stulist<-list(
+  "rollno"=rn,
+  "na"=name,
+  "co"=course
+)
+#print(stulist)
+
+semester<-c(6,7,8,9)
+sem<-list(semester)
+sem<-list(
+  "seme"=sem
+)
+#print(sem)
+stulist<-c(stulist,sem)
+print(stulist)
+
+stulist[["seme"]] = NULL
