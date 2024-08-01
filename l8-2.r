@@ -1,0 +1,15 @@
+print(head(person,5))
+#Net<-(person$BasicSalary+HRA+DA%5)
+
+a<-head(person$BasicSalary,8)
+print(a)
+#hist(a,main = 'Histogram',col=heat.colors(length(x)),xlab ='salary',xlim = c(0,50000),ylim = c(0,5))
+
+b<-head(person$BasicSalary,5)
+c<-head(person$HRA,5)
+print(b)
+print(c)
+str(b)
+str(c)
+plot(b,c,main = "Scatter plot",xlab = 'Salary',ylab = 'HRA',xlim = c(20000,40000),ylim = c(0.0,0.5),col='red')
+lines(b,c,col='blue')
